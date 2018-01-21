@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.qaagility.javaee</groupId>
-	<artifactId>HelloWorldJava</artifactId>
+	<groupId>net.codejava.javaee</groupId>
+	<artifactId>HelloWorldJavaEE</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>Hello World Java</name>
+	<name>Hello World Java EE</name>
 	<description>Learn Java JSP and Servlet</description>
 
 	<dependencies>
@@ -24,8 +24,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>HelloWorldJava</finalName>
-
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
@@ -44,18 +42,6 @@
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
-			<plugin>
-  				<groupId>org.eclipse.jetty</groupId>
-  				<artifactId>jetty-maven-plugin</artifactId>
-  				<version>9.4.6.v20170531</version>
-			</plugin>			
 		</plugins>
 	</build>
-<distributionManagement>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>mint-snapshots</name>
-        <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
-    </snapshotRepository>
-</distributionManagement>
 </project>
